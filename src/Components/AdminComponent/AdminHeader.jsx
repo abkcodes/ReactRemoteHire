@@ -86,21 +86,12 @@ function AdminHeader() {
            
             
             <grid item xs={4} md={4} style={gridheading}>
-            {/* <Link to="/admin/adminhome"  style={{color:"white", textDecoration:"none"} } underline='none'> */}
+            <Link to="/admin/adminhome"  style={{color:"white", textDecoration:"none"} } underline='none'>
               <IconButton className="options-below-nav-items options-institute" edge="start" ariel-label="menu" sx={{mr:2}}>Home</IconButton>
-              {/* </Link> */}
-              </grid>
-            {/* <grid item xs={4} md={4}  style={grid1} >
-            <Link to="/user/appliedjobs"  style={{color:"white", textDecoration:"none"} } underline='none'>
-              <IconButton className="options-below-nav-items options-courses" edge="start"  ariel-label="menu" sx={{mr:2}}>job</IconButton>
               </Link>
-              </grid> */}
-            <grid item xs={4} md={4} style={grid1}  >
-              {/* <Link to="/user/profile" style={{color:"white",textDecoration:"none"}}  > */}
-                <IconButton className="options-below-nav-items options-student" edge="start"   ariel-label="menu" sx={{mr:2}}>Profile
-                </IconButton>
-                 {/* </Link> */}
-            </grid>
+              </grid>
+          
+           
            
          
            

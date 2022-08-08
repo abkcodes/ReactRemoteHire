@@ -9,8 +9,10 @@ import {
   Outlet,
   Navigate,
 } from "react-router-dom";
+import AddEmployee from '../AdminPages/AddEmployee';
 
 import AdminHomePage from '../AdminPages/AdminHomePage';
+import EditEmployee from '../AdminPages/EditEmployee';
 import AdminPrivateRoute from '../LoginAndSignupPages/AdminPrivate';
 
 export default function AdminRouting() {
@@ -21,12 +23,12 @@ export default function AdminRouting() {
       <Router>
      
      <Routes>
-     <Route path="/" element={<AdminPrivateRoute/>}>
+     {/* <Route path="/" element={<AdminPrivateRoute/>}> */}
     
      <Route path="/admin/adminhome" exact element={<AdminHomePage value1={value1}/>} />
         <Route path="/admin/adds" exact element={<AddEmployee value1={value1} />} />
         <Route path="admin/adminhome/:id/" excat element={<EditEmployee/>}/>
-   </ Route>
+   {/* </ Route> */}
      
      </Routes>
    </Router>
